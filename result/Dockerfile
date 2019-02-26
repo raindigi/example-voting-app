@@ -12,6 +12,8 @@ RUN npm install \
  && mv /app/node_modules /node_modules
 COPY . /app
 
+RUN ls -la
+
 ENV PORT 80
 EXPOSE 80
 
